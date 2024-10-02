@@ -87,6 +87,7 @@ img{
 .new-arrival img{
     height: 200px;
     width: 300px;
+    border-radius: 5px;
 }
 .new-arrival{
     display: flex;
@@ -168,8 +169,9 @@ img{
 .products-box{
     text-align: center;
     flex-basis: 20%;
+
 }
-.products-box image{
+.products-box img{
     border-radius: 10px;
 }
 .news button:hover{
@@ -177,6 +179,62 @@ img{
     cursor: pointer;
 }
 
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color: #1d232c;
+}
+
+#form button{
+    background-color: #1d232c;
+    color:white;
+    border: 1px solid #1d232c;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
 
 @media screen and ( max-width:700px) {
     .nav-menu{
